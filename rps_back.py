@@ -11,9 +11,11 @@ def instructions(response):
     instruction_string = "Rock beats scissors, scissors beats paper, and paper beats rock. "
 
     # Use a string method to make response all one case
-	
+    response = response.lower()
 
     # Use an if statement to check if the response is "yes"
+    if response == "yes":
+       rps.print_instructions(instruction_string)
     
     # If the user does want instructions pass instruction_string to
     # rps.print_instructions
@@ -84,16 +86,21 @@ def play_game(name):
 def play_match():
 
     # Call rps.ask_instructions() to see if player wants instructions
+    rps.ask_instructions()
 
 
     # Call rps.get_name() to get a string of the players name
     # Be sure to save return value, i.e. player_name = rps.get_name()
+    rps.get_name
     player_name = ""
+    player_name = rps.get_name()
 
 
     # Call rps.get_num_play to get the number of games to play
     # Be sure to save return value, i.e. num_times = rps.get_num_play()
+    rps.get_num_play
     num_times = 0
+    num_times = rps.get_num_play()
 
     
     # Use these variables to keep track of who won
