@@ -6,9 +6,12 @@ import rps
 def instructions(response):
     # Add to instruction_string so that it contains information on
     # how to play rock-paper-scissors
-    instruction_string = ""
+    instruction_string = "Choose rock, paper, or scissors from the buttons. "
+    instruciton_string = "The computer will then choose a move. "
+    instruction_string = "Rock beats scissors, scissors beats paper, and paper beats rock. "
 
     # Use a string method to make response all one case
+	
 
     # Use an if statement to check if the response is "yes"
     
