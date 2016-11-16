@@ -29,10 +29,14 @@ def instructions(response):
 # Return requirement: name
 def check_name(name):
 
-    error = "Somethings wrong"
+    error = "Invalid name"
 
-    if len(name) > 30:
-        rps.quit_game(error)
+    if len(name) > 1 && len(name) < 10:
+	if name[0].isupper():
+	    for letter in name:
+		if letter != ' ':
+		    return name
+    else rps.quit_game(error)
 
     # Use if statements, as above, to check if 'name' meets the requirements listed above. If it fails
     # any condition call rps.quit_game with an appropriate error message.
